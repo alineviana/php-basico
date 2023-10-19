@@ -4,7 +4,7 @@ require_once 'funcoes_bank_example.php';
 
 $contasCorrentes = [
     '123.456.789-10' => [
-        'titular' => 'Vinicius',
+        'titular' => 'Vinícius',
         'saldo' => '1000'
     ],
     '123.456.789-11' => [
@@ -50,7 +50,7 @@ echo "<ul>";
 </head>
 
 <body>
-    <h1>Contas Correntes</h1>
+    <h1>| Contas Correntes |</h1>
     <dl>
         <?php foreach($contasCorrentes as $cpf => $conta) { ?>
             <dt>
@@ -60,7 +60,7 @@ echo "<ul>";
                 </h3>
             </dt>
             <dd>
-                SALDO: 
+                SALDO =>  
                 <?php echo $conta['saldo']; ?>
             </dd>
         <?php } ?>
