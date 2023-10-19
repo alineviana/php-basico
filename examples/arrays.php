@@ -2,6 +2,8 @@
 
 $idadeList = [19, 21, 23, 25, 27, 29];
 
+list($idadeVinicius, $idadeJoao, $idadeMaria) = $idadeList;
+
 $idadeList[] = 20;
 
 foreach ($idadeList as $idades) {
