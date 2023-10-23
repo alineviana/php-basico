@@ -19,3 +19,7 @@ if (str_starts_with($url, 'https')) {
 }
 
 $email = 'vinicius@alura.com.br';
+$posicaoDoArroba = strpos($email, needle: '@');
+
+echo substr($email, offset:0, length: 8) . PHP_EOL;
+echo substr($email, offset: 9) . PHP_EOL;
